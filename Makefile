@@ -15,7 +15,7 @@ protobuf:
 	echo "Generate protobuf is done"
 
 run: build
-	build/app-devtree-protobuf
+	build/app_http_server
 
 test:
 	go test ./...
