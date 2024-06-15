@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: devtree-protobuf-grpc
+    privileged: true
+    devices:
+      - /dev/bus/usb/001/002
+    ports:
+      - "50051:50051"
